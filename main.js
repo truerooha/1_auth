@@ -18,7 +18,6 @@ function checkUserCookie() {
         greetEl.innerHTML= "Привет, " + userCookie + ". Чтобы выйти нажмите <a href= 'exit.php'>здесь</a>"
         greetEl.style.display = "block";
     } else {
-        rowEl.style.display = "block";
         greetEl.style.display = "none";
     }
 }
