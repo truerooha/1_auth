@@ -18,6 +18,8 @@
         exit();
     }
     
+    $pass = md5($pass."fdsfsf5"); // функция хэширования. через точку указывается соль
+
     $mysql = new mysqli('localhost', 'root', 'root', 'auth');
     //TODO сначала бы конечно лучше проверить наличие такого логина
     $mysql->query("INSERT INTO `users` (`login`, `pass`, `name`)
