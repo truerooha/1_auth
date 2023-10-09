@@ -24,4 +24,6 @@
     VALUES('$login', '$pass', '$name')");
 
     $mysql->close();
+
+    header('Location: /1_auth/index.html'); //это пишем для перехода на страницу. Слэш означает переход на главную
 ?>
